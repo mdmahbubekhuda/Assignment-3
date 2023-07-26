@@ -41,6 +41,7 @@
 
 <body class="font-lato">
     <header class="container mx-auto px-4">
+        
         <!-- navigation -->
         <nav class="py-8">
             <div class="navbar justify-between items-center bg-primary-color rounded-[600px]">
@@ -71,7 +72,7 @@
                     </div>
                 </div>
                 <div class="navbar-center order-1 md:order-2">
-                    <a class="btn btn-ghost normal-case text-xl md:text-white font-bold">
+                    <a class="btn btn-ghost normal-case text-lg md:text-xl md:text-white font-bold">
                         <img class="max-w-[30px]" src="images/logo.png" alt="Logo">
                         Fruit Burst
                     </a>
@@ -94,9 +95,10 @@
                         <div class="hero-overlay bg-opacity-60"></div>
                         <div class="hero-content text-center text-neutral-content">
                             <div class="max-w-md">
-                                <h1 class="mb-5 text-5xl font-bold text-white">Exotic tastes at your doorstep</h1>
+                                <h1 class="mb-32 md:mb-5 text-2xl md:text-5xl font-bold text-white">Exotic tastes at your doorstep</h1>
                                 <p class="mb-5 text-white">We supply highly quality organic products</p>
-                                <button class="btn btn-warning bg-primary-color border-none text-white">Shop
+                                <button
+                                    class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-primary-color border-none text-white">Shop
                                     Now</button>
                             </div>
                         </div>
@@ -113,7 +115,7 @@
                         <div class="hero-overlay bg-opacity-60"></div>
                         <div class="hero-content text-center text-neutral-content">
                             <div class="max-w-md">
-                                <h1 class="mb-5 text-5xl font-bold text-white">Exotic tastes at your doorstep</h1>
+                                <h1 class="mb-32 md:mb-5 text-2xl md:text-5xl font-bold text-white">Exotic tastes at your doorstep</h1>
                                 <p class="mb-5 text-white">We supply highly quality organic products</p>
                                 <button class="btn btn-warning bg-primary-color border-none text-white">Shop
                                     Now</button>
@@ -132,7 +134,7 @@
                         <div class="hero-overlay bg-opacity-60"></div>
                         <div class="hero-content text-center text-neutral-content">
                             <div class="max-w-md">
-                                <h1 class="mb-5 text-5xl font-bold text-white">Exotic tastes at your doorstep</h1>
+                                <h1 class="mb-32 md:mb-5 text-2xl md:text-5xl font-bold text-white">Exotic tastes at your doorstep</h1>
                                 <p class="mb-5 text-white">We supply highly quality organic products</p>
                                 <button class="btn btn-warning bg-primary-color border-none text-white">Shop
                                     Now</button>
@@ -151,7 +153,7 @@
                         <div class="hero-overlay bg-opacity-60"></div>
                         <div class="hero-content text-center text-neutral-content">
                             <div class="max-w-md">
-                                <h1 class="mb-5 text-5xl font-bold text-white">Exotic tastes at your doorstep</h1>
+                                <h1 class="mb-32 md:mb-5 text-2xl md:text-5xl font-bold text-white">Exotic tastes at your doorstep</h1>
                                 <p class="mb-5 text-white">We supply highly quality organic products</p>
                                 <button class="btn btn-warning bg-primary-color border-none text-white">Shop
                                     Now</button>
@@ -189,18 +191,19 @@
                 </div>
             </div>
         </section>
+    
     </header>
 
     <main>
         <!-- deal-of-the-day -->
         <section class="container mx-auto px-4">
-            
-            <!-- container -->
-            <div class="flex gap-4 items-center">
-               
-                <!-- content-title-&-text -->
-                <div class="flex-1 space-y-4">
-                    <h2 class="text-4xl font-bold">Deal of the day</h2>
+
+            <!-- title-&-countdown-container -->
+            <div class="flex flex-col md:flex-row gap-4 items-center mt-4 md:mt-0">
+
+                <!-- title-and-text -->
+                <div class="flex-1 space-y-4 text-center md:text-justify">
+                    <h2 class="text-2xl md:text-5xl font-bold">Deal of the day</h2>
                     <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin
                         literature from 45 BC, making it over 2000 years old.</p>
                 </div>
@@ -209,39 +212,170 @@
                 <div class="flex-1">
                     <div class="grid grid-flow-col gap-5 text-center auto-cols-max justify-end">
                         <div class="flex flex-col">
-                            <span class="countdown font-mono text-5xl">
-                                <span style="--value:15;"></span>
+                            <span class="countdown font-mono text-2xl md:text-5xl">
+                                <span style="--value:00;"></span>
                             </span>
                             Days
                         </div>
                         <div class="flex flex-col">
-                            <span class="countdown font-mono text-5xl">
-                                <span style="--value:10;"></span>
+                            <span class="countdown font-mono text-2xl md:text-5xl">
+                                <span style="--value:23;"></span>
                             </span>
                             Hours
                         </div>
                         <div class="flex flex-col">
-                            <span class="countdown font-mono text-5xl">
-                                <span style="--value:24;"></span>
+                            <span class="countdown font-mono text-2xl md:text-5xl">
+                                <span style="--value:59;"></span>
                             </span>
                             Minutes
                         </div>
                         <div class="flex flex-col">
-                            <span class="countdown font-mono text-5xl">
-                                <span style="--value:42;"></span>
+                            <span class="countdown font-mono text-2xl md:text-5xl">
+                                <span style="--value:59;"></span>
                             </span>
                             Seconds
                         </div>
                     </div>
                 </div>
+
+            </div>
+
+            <!-- deals-container -->
+            <div class="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 my-8">
+                
+                <!-- deals-1 -->
+                <div class="card w-full border">
+                    <figure class="px-10 pt-10">
+                        <img src="./images/fruit6.png" alt="apple" class="rounded-xl max-h-[130px]" />
+                    </figure>
+                    <div class="card-body items-center text-center space-y-4">
+                        <h2 class="card-title">$12.90 - $18.85</h2>
+                        <div class="border-b w-full"></div>
+                        <p>Apple</p>
+
+                        <!-- rating -->
+                        <div class="rating">
+                            <input type="radio" name="rating-2 apple" class="mask mask-star-2 bg-primary-color" />
+                            <input type="radio" name="rating-2 apple" class="mask mask-star-2 bg-primary-color" />
+                            <input type="radio" name="rating-2 apple" class="mask mask-star-2 bg-primary-color" />
+                            <input type="radio" name="rating-2 apple" class="mask mask-star-2 bg-primary-color"
+                                checked />
+                            <input type="radio" name="rating-2 apple" class="mask mask-star-2 bg-primary-color" />
+                        </div>
+
+                        <!-- The button to open modal -->
+                        <label for="my_modal_6"
+                            class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg text-primary-color bg-white border-none pointer-events-auto">
+                            Details
+                        </label>
+                    </div>
+                </div>
+                <!-- deals-2 -->
+                <div class="card w-full border">
+                    <figure class="px-10 pt-10">
+                        <img src="./images/fruit7.png" alt="apple" class="rounded-xl max-h-[130px]" />
+                    </figure>
+                    <div class="card-body items-center text-center space-y-4">
+                        <h2 class="card-title">$12.90 - $18.85</h2>
+                        <div class="border-b w-full"></div>
+                        <p>Orange</p>
+
+                        <!-- rating -->
+                        <div class="rating">
+                            <input type="radio" name="rating-2 orange" class="mask mask-star-2 bg-primary-color" />
+                            <input type="radio" name="rating-2 orange" class="mask mask-star-2 bg-primary-color" />
+                            <input type="radio" name="rating-2 orange" class="mask mask-star-2 bg-primary-color" />
+                            <input type="radio" name="rating-2 orange" class="mask mask-star-2 bg-primary-color"
+                                checked />
+                            <input type="radio" name="rating-2 orange" class="mask mask-star-2 bg-primary-color" />
+                        </div>
+
+                        <!-- The button to open modal -->
+                        <label for="my_modal_6"
+                            class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg text-primary-color bg-white border-none pointer-events-auto">
+                            Details
+                        </label>
+                    </div>
+                </div>
+                <!-- deals-3 -->
+                <div class="card w-full border">
+                    <figure class="px-10 pt-10">
+                        <img src="./images/fruit8.png" alt="apple" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center space-y-4">
+                        <h2 class="card-title">$12.90 - $18.85</h2>
+                        <div class="border-b w-full"></div>
+                        <p>Dragon Fruit</p>
+
+                        <!-- rating -->
+                        <div class="rating">
+                            <input type="radio" name="rating-2 dragon" class="mask mask-star-2 bg-primary-color" />
+                            <input type="radio" name="rating-2 dragon" class="mask mask-star-2 bg-primary-color" />
+                            <input type="radio" name="rating-2 dragon" class="mask mask-star-2 bg-primary-color" />
+                            <input type="radio" name="rating-2 dragon" class="mask mask-star-2 bg-primary-color"
+                                checked />
+                            <input type="radio" name="rating-2 dragon" class="mask mask-star-2 bg-primary-color" />
+                        </div>
+
+                        <!-- The button to open modal -->
+                        <label for="my_modal_6"
+                            class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg text-primary-color bg-white border-none pointer-events-auto">
+                            Details
+                        </label>
+                    </div>
+                </div>
+                <!-- deals-4 -->
+                <div class="card w-full border">
+                    <figure class="px-10 pt-10">
+                        <img src="./images/fruit9.png" alt="apple" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center space-y-4">
+                        <h2 class="card-title">$12.90 - $18.85</h2>
+                        <div class="border-b w-full"></div>
+                        <p>Banana</p>
+
+                        <!-- rating -->
+                        <div class="rating">
+                            <input type="radio" name="rating-2 banana" class="mask mask-star-2 bg-primary-color" />
+                            <input type="radio" name="rating-2 banana" class="mask mask-star-2 bg-primary-color" />
+                            <input type="radio" name="rating-2 banana" class="mask mask-star-2 bg-primary-color" />
+                            <input type="radio" name="rating-2 banana" class="mask mask-star-2 bg-primary-color"
+                                checked />
+                            <input type="radio" name="rating-2 banana" class="mask mask-star-2 bg-primary-color" />
+                        </div>
+
+                        <!-- modal -->
+                        <!-- The button to open modal -->
+                        <label for="my_modal_6"
+                            class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg text-primary-color bg-white border-none pointer-events-auto">
+                            Details
+                        </label>
+                    </div>
+                </div>
             
             </div>
 
-            <!--  -->
         </section>
     </main>
 
-
+    <!-- deals-modal-item-1 -->
+    <input type="checkbox" id="my_modal_6" class="modal-toggle" />
+    <div class="modal">
+        <div class="modal-box text-center space-y-4">
+            <img class="mx-auto" src="./images/fruit6.png" alt="apple">
+            <h3 class="font-bold text-lg">Apple</h3>
+            <p class="">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+            <div class="modal-action justify-center gap-4">
+                <label for="my_modal_6"
+                    class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg text-primary-color bg-white border-2 border-primary-color pointer-events-auto">
+                    Close!
+                </label>
+                <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-primary-color border-none text-white">
+                    Buy Now
+                </button>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
